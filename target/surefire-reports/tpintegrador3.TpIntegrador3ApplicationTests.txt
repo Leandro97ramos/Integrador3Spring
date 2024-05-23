@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tpintegrador3.TpIntegrador3ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.88 s - in tpintegrador3.TpIntegrador3ApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.083 s - in tpintegrador3.TpIntegrador3ApplicationTests
