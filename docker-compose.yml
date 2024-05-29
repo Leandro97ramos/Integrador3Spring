@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  integrador3:
+    build: integrador3spring
+    ports:
+      - "8081:8081"
+    environment:
+      - DB_URL=jdbc:mysql://tp3:3307/integrador3?createDatabaseIfNotExist=true
+      - DB_USER=root
+      - DB_PASS=root
+    restart: always
+    depends_on:
+      tp3:
+        condition: service_healthy
+  tp3:
+    image: mysql:5.7
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: integrador3
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+    
