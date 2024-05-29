@@ -1,4 +1,4 @@
-# Created at 2024-05-23T17:18:02.001
+# Created at 2024-05-29T09:34:01.057
 Boot Manifest-JAR contains absolute paths in classpath 'F:\Users\leand\Desktop\curso\Facultad-Tudai\Arquitectura\Integrador3Spring\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root
